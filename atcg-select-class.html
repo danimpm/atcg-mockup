@@ -1,0 +1,230 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATCG - TailWind TEST</title>
+    <link href="css/all.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="js/atcg.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", load, false);
+    </script>
+  </head>
+  <div class="container">
+    <section class="page-desc">
+      <span>Selecciona tu clase:</span>
+    </section>
+    <section class="cards">
+      <article id="item-magician" class="card">
+        <div class="card-content">
+          <div class="anverse">
+            <i class="fa-solid fa-rotate-right"></i>
+            <i class="class-icon fas fa-hat-wizard wizard"></i>
+            <p class="title">Mago</p>
+            <p class="description">
+              Los magos controlan una fuerza invisible que les permite realizar
+              toda clase conjuros, tanto de ataque como de defensa.
+            </p>
+            <button>
+              <i class="fas fa-check-circle" style="display: none"></i
+              >SELECCIONAR
+            </button>
+          </div>
+          <div class="reverse">
+            <i class="fa-solid fa-rotate-left"></i>
+            <i class="class-icon fas fa-hat-wizard wizard"></i>
+            <p class="title">Estad&iacute;sticas Iniciales</p>
+            <div class="atts">
+              <p class="att health">
+                <i class="fa-solid fa-heart"></i>
+                <span class="att-value">70</span>
+              </p>
+              <p class="att strength">
+                <i class="fa-solid fa-hand-fist"></i>
+                <span class="att-value">10</span>
+              </p>
+              <p class="att defense">
+                <i class="fa-solid fa-shield-blank"></i>
+                <span class="att-value">50</span>
+              </p>
+              <p class="att magic">
+                <i class="fa-solid fa-fire"></i>
+                <span class="att-value">100</span>
+              </p>
+            </div>
+            <button>VOLVER</button>
+          </div>
+        </div>
+      </article>
+      <article id="item-warrior" class="card">
+        <div class="card-content">
+          <div class="anverse">
+            <i class="fa-solid fa-rotate-right"></i>
+            <i class="class-icon fas fa-shield warrior"></i>
+            <p class="title">Guerrero</p>
+            <p class="description">
+              Los guerreros se centran en sus habilidades físicas. Potencian su
+              poder mediante el entrenamiento incansable.
+            </p>
+            <button>
+              <i class="fas fa-check-circle" style="display: none"></i
+              >SELECCIONAR
+            </button>
+          </div>
+          <div class="reverse">
+            <i class="fa-solid fa-rotate-left"></i>
+            <i class="class-icon fas fa-shield warrior"></i>
+            <p class="title">Estad&iacute;sticas Iniciales</p>
+            <div class="atts">
+              <p class="att health">
+                <i class="fa-solid fa-heart"></i>
+                <span class="att-value">70</span>
+              </p>
+              <p class="att strength">
+                <i class="fa-solid fa-hand-fist"></i>
+                <span class="att-value">90</span>
+              </p>
+              <p class="att defense">
+                <i class="fa-solid fa-shield-blank"></i>
+                <span class="att-value">70</span>
+              </p>
+              <p class="att magic">
+                <i class="fa-solid fa-fire"></i>
+                <span class="att-value">0</span>
+              </p>
+            </div>
+            <button>VOLVER</button>
+          </div>
+        </div>
+      </article>
+      <article id="item-cleric" class="card">
+        <div class="card-content">
+          <div class="anverse">
+            <i class="fa-solid fa-rotate-right"></i>
+            <i class="class-icon fas fa-chess-king cleric"></i>
+            <p class="title">Cl&eacute;rigo</p>
+            <p class="description">
+              Los clérigos centran su poder en la fe. Son poderosos físicamente,
+              pero también pueden realizar algunos conjuros.
+            </p>
+            <button>
+              <i class="fas fa-check-circle" style="display: none"></i
+              >SELECCIONAR
+            </button>
+          </div>
+          <div class="reverse">
+            <i class="fa-solid fa-rotate-left"></i>
+            <i class="class-icon fas fa-chess-king cleric"></i>
+            <p class="title">Estad&iacute;sticas Iniciales</p>
+            <div class="atts">
+              <p class="att health">
+                <i class="fa-solid fa-heart"></i>
+                <span class="att-value">70</span>
+              </p>
+              <p class="att strength">
+                <i class="fa-solid fa-hand-fist"></i>
+                <span class="att-value">90</span>
+              </p>
+              <p class="att defense">
+                <i class="fa-solid fa-shield-blank"></i>
+                <span class="att-value">70</span>
+              </p>
+              <p class="att magic">
+                <i class="fa-solid fa-fire"></i>
+                <span class="att-value">0</span>
+              </p>
+            </div>
+            <button>VOLVER</button>
+          </div>
+        </div>
+      </article>
+      <article id="item-barbarian" class="card">
+        <div class="card-content">
+          <div class="anverse">
+            <i class="fa-solid fa-rotate-right"></i>
+            <i class="class-icon fas fa-drumstick-bite barbarian"></i>
+            <p class="title">B&aacute;rbaro</p>
+            <p class="description">
+              Los bárbaros se centran en su poderío físico para vencer a sus
+              enemigos. Suelen tener poca inteligencia, pero mucha fuerza y
+              resistencia.
+            </p>
+            <button>
+              <i class="fas fa-check-circle" style="display: none"></i
+              >SELECCIONAR
+            </button>
+          </div>
+          <div class="reverse">
+            <i class="fa-solid fa-rotate-left"></i>
+            <i class="class-icon fas fa-drumstick-bite barbarian"></i>
+            <p class="title">Estad&iacute;sticas Iniciales</p>
+            <div class="atts">
+              <p class="att health">
+                <i class="fa-solid fa-heart"></i>
+                <span class="att-value">70</span>
+              </p>
+              <p class="att strength">
+                <i class="fa-solid fa-hand-fist"></i>
+                <span class="att-value">90</span>
+              </p>
+              <p class="att defense">
+                <i class="fa-solid fa-shield-blank"></i>
+                <span class="att-value">70</span>
+              </p>
+              <p class="att magic">
+                <i class="fa-solid fa-fire"></i>
+                <span class="att-value">0</span>
+              </p>
+            </div>
+            <button>VOLVER</button>
+          </div>
+        </div>
+      </article>
+      <article id="item-distance" class="card">
+        <div class="card-content">
+          <div class="anverse">
+            <i class="fa-solid fa-rotate-right"></i>
+            <i class="class-icon fas fa-feather-alt distance"></i>
+            <p class="title">Atacante a distancia</p>
+            <p class="description">
+              Los atacantes a distancia son muy hábiles desde lejos, pero
+              débiles en el cuerpo a cuerpo. Suelen ocupar posiciones retrasadas
+              dentro del grupo.
+            </p>
+            <button>
+              <i class="fas fa-check-circle" style="display: none"></i
+              >SELECCIONAR
+            </button>
+          </div>
+          <div class="reverse">
+            <i class="fa-solid fa-rotate-left"></i>
+            <i class="class-icon fas fa-feather-alt distance"></i>
+            <p class="title">Estad&iacute;sticas Iniciales</p>
+            <div class="atts">
+              <p class="att health">
+                <i class="fa-solid fa-heart"></i>
+                <span class="att-value">70</span>
+              </p>
+              <p class="att strength">
+                <i class="fa-solid fa-hand-fist"></i>
+                <span class="att-value">90</span>
+              </p>
+              <p class="att defense">
+                <i class="fa-solid fa-shield-blank"></i>
+                <span class="att-value">70</span>
+              </p>
+              <p class="att magic">
+                <i class="fa-solid fa-fire"></i>
+                <span class="att-value">0</span>
+              </p>
+            </div>
+            <button>VOLVER</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</html>

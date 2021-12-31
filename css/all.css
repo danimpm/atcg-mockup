@@ -1,0 +1,186 @@
+button {
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 300px;
+  margin: 14px;
+  border: 6px solid white;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card.selected {
+  box-shadow: 0px 0px 10px 5px brown;
+}
+
+.card:hover.selected {
+  box-shadow: 0px 0px 10px 5px brown;
+}
+
+.card .description {
+  font-size: 1em;
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  margin: 10px;
+  min-height: 100px;
+}
+
+.card .title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.card .class-icon {
+  font-size: 7em;
+  margin: 24px;
+  transition: 0.3s ease-in-out;
+}
+
+.card .reverse .class-icon {
+  font-size: 3em;
+}
+
+.card button {
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 8px;
+  background-color: brown;
+  color: white;
+}
+
+.card button > i {
+  margin-right: 8px;
+}
+
+.selected button {
+  color: brown;
+  background-color: white;
+}
+
+.card .wizard {
+  color: #3498db;
+}
+
+.card .warrior {
+  color: rgba(31, 31, 31, 0.459);
+}
+
+.card .cleric {
+  color: rgba(47, 12, 77, 0.589);
+}
+
+.card .barbarian {
+  color: rgb(180, 169, 16);
+}
+
+.card .distance {
+  color: rgba(26, 97, 30, 0.753);
+}
+
+.card:hover .class-icon {
+  transform: scale(1.2);
+}
+
+.reverse {
+  display: none;
+}
+
+.anverse {
+}
+
+.card-content {
+  transition: all 2s ease;
+}
+
+.card-content .active {
+  transform: scale(1.2);
+}
+
+.card .fa-rotate-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 2.1em;
+  color: brown;
+  opacity: 0.7;
+  padding: 8px;
+  z-index: 99;
+}
+
+.card .fa-rotate-left {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 2.1em;
+  color: brown;
+  opacity: 0.7;
+  padding: 8px;
+  z-index: 99;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.page-desc {
+  font-size: 1.3em;
+  text-align: center;
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  margin: 20px;
+}
+
+.page-desc > span {
+  color: brown;
+}
+
+.atts {
+  text-align: left;
+  margin: 10px;
+  margin-left: 50px;
+  min-height: 164px;
+  font-size: 1.3em;
+}
+
+.att {
+  width: 50%;
+  float: left;
+}
+
+.att.health {
+  color: rgb(143, 6, 6);
+}
+
+.att.strength {
+  color: rgb(100, 98, 98);
+}
+
+.att.defense {
+  color: rgb(179, 132, 45);
+}
+
+.att.magic {
+  color: rgb(13, 13, 90);
+}
+
+.att-value {
+  font-weight: bold;
+  margin-left: 4px;
+}
